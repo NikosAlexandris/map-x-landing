@@ -20,6 +20,8 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -74,7 +76,7 @@
         <div class="row">
           <div class="col-xs-12 col-md-6">
 
-          <h2>What is MAP-X?</h2>
+            <h2>What is MAP-X?</h2>
             <p>MAP-X is an answer to some of these challenges. Born out of a request by the g7+ group of conflict- affected states, the open data platform ‘Mapping and Assessing the Performance of Extractive Industries’, or MAP-X, aims to:</p>
             <ul>
               <li> Transform transparency information into an open data and interoperable format that is easy to access by all stakeholders in a visu- ally intuitive platform </li>
@@ -98,67 +100,59 @@
 
     <!-- videos -->
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="videos" class="services bg-primary">
+    <section id="videos" class="services grayed">
       <div class="container">
         <div class="row text-center">
-          <div class="col-lg-10 col-lg-offset-1">
+          <div class="row">
             <h2>Videos</h2>
             <hr class="small">
             <div class="row">
-              <div class="col-md-4">
-                <div class="service-item">
-                  <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-video-camera fa-stack-1x text-primary"></i>
-                  </span>
-                  <h4>
-                    <strong>English</strong>
-                  </h4>
-                  <p>English video presentation.</p>
-                  <a href="http://mapx.io/videos/en" class="btn btn-light">Video</a>
+              <div>
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs nav-justified" role="tablist">
+                  <li role="presentation" class="active"><a href="#viden" aria-controls="viden" role="tab" data-toggle="tab">ENGLISH</a></li>
+                  <li role="presentation"><a href="#vidfr" aria-controls="vidfr" role="tab" data-toggle="tab">FRANÇAIS</a></li>
+                  <li role="presentation"><a href="#vidsp" aria-controls="vidsp" role="tab" data-toggle="tab">SPANISH</a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane active" id="videng">
+                    <video controls src="http://www.grid.unep.ch/movie/MAP-X%20English%20version%20draft%205.mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                    <br>
+                    <a href="http://mapx.io/videos/en" class="btn btn-light">Source</a>
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="vidfr">
+                    <video controls src="http://www.grid.unep.ch/movie/MAP-X%20French%20version%20draft%205.mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                    <br>
+                    <a href="http://mapx.io/videos/fr" class="btn btn-light">Source</a>
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="vidsp">
+                    <video controls src="http://www.grid.unep.ch/movie/MAP-X%20Spanish%20version%20draft%205.mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                    <br>
+                    <a href="http://mapx.io/videos/es" class="btn btn-light">Source</a>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="service-item">
-                  <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-video-camera fa-stack-1x text-primary"></i>
-                  </span>
-                  <h4>
-                    <strong>Français</strong>
-                  </h4>
-                  <p>Vidéo de présentation en français.</p>
-                  <a href="http://mapx.io/videos/fr" class="btn btn-light">Vidéo</a>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="service-item">
-                  <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-video-camera fa-stack-1x text-primary"></i>
-                  </span>
-                  <h4>
-                    <strong>Spanish</strong>
-                  </h4>
-                  <p>Vídeo de presentación en español.</p>
-                  <a href="http://mapx.io/videos/es" class="btn btn-light">Video</a>
-                </div>
-              </div>
-           </div>
-            <!-- /.row (nested) -->
+            </div>
+            <!-- /.col-lg-10 -->
           </div>
-          <!-- /.col-lg-10 -->
+          <!-- /.row -->
         </div>
-        <!-- /.row -->
-      </div>
-      <!-- /.container -->
+        <!-- /.container -->
     </section>
 
     <!-- Callout -->
     <!--<aside class="callout">-->
-      <!--<div class="text-vertical-center">-->
-        <!--<h1>Vertically Centered Text</h1>-->
-      <!--</div>-->
+    <!--<div class="text-vertical-center">-->
+    <!--<h1>Vertically Centered Text</h1>-->
+    <!--</div>-->
     <!--</aside>-->
 
     <!-- Portfolio -->
@@ -208,16 +202,16 @@
     </section>
 
     <!-- Call to Action -->
-    <aside class="call-to-action bg-primary">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h3>To mapx.io !</h3>
-            <a href="http://mapx.io" class="btn btn-lg btn-dark">Open</a>
-          </div>
-        </div>
-      </div>
-    </aside>
+<!--    <aside class="call-to-action bg-primary">-->
+      <!--<div class="container">-->
+        <!--<div class="row">-->
+          <!--<div class="col-lg-12 text-center">-->
+            <!--<h3>To mapx.io !</h3>-->
+            <!--<a href="http://mapx.io" class="btn btn-lg btn-dark">Open</a>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</aside>-->
 
     <!-- Map -->
     <section id="contact" class="map">
@@ -243,10 +237,9 @@
     </footer>
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <!--<script src="js/bootstrap.min.js"></script>-->
 
     <!-- Custom Theme JavaScript -->
     <script>
@@ -264,20 +257,22 @@ $("#menu-toggle").click(function(e) {
 
 // Scrolls to the selected menu item on the page
 $(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+  $('a[href="#"])').click(function() {
+  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
 
-      var target = $(this.hash);
-    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-    if (target.length) {
-      $('html,body').animate({
-        scrollTop: target.offset().top
-      }, 1000);
-      return false;
-    }
+    var target = $(this.hash);
+  target = target.length ? target : $('[name=*' + this.hash.slice(1) + '"]');
+  if (target.length) {
+    $('html,body').animate({
+      scrollTop: target.offset().top
+    }, 1000);
+    return false;
   }
-  });
+}
 });
+});
+
+
     </script>
 
   </body>
